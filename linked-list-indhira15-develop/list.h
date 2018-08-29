@@ -17,11 +17,22 @@ class List {
         void print_reverse(Node<T>* head);
 
     public:
-        List();
+		List() {
+			head = nullptr;
+			tail = nullptr;
+		}
 
-        int front();
-        int back();
-        void push_front(T value);
+		T int front() {
+			
+			return head -> data;
+		}
+		T int back() {
+			return tail->data;
+		}
+		void push_front(T value) {
+			Node<T> *t = head;
+			
+		}
         void push_back(T value);
         void pop_front();
         void pop_back();
